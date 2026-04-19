@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produto - Loja Oficial do Corinthians</title>
+</head>
+
+<body style="background-color: #FFFFFF; color: #000000;">
+
+    <header style="background-color: #000000; color: #FFFFFF;">
+        <center>
+            <img src="imagens/escudo.png" alt="Escudo do Corinthians" width="100">
+            <h1>Cadastro de Produto</h1>
+            <p><em>Adicione novos produtos ao catálogo da Loja Oficial</em></p>
+        </center>
+    </header>
+
+    <main>
+        <section>
+            <h2><strong>Formulário de Cadastro de Produto</strong></h2>
+            <p>
+                Utilize este formulário para <b>adicionar um novo produto</b> ao catálogo da
+                <strong>Loja Oficial do Corinthians</strong>. Preencha todas as informações
+                do produto, incluindo <em>categoria</em>, <i>preço</i>, <u>estoque disponível</u>
+                e os <mark>tamanhos disponíveis</mark>.
+            </p>
+        </section>
+
+        <br>
+
+        <section style="background-color: #EEEEEE; color: #000000;">
+            <center>
+                <img src="imagens/camisa.png" alt="Camisa do Corinthians" width="400">
+                <br>
+                <small>Camisa Oficial — Produto mais vendido da loja</small>
+            </center>
+        </section>
+
+        <br>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend><b>Dados do Produto</b></legend>
+                    <br>
+
+                    <label for="nome-produto"><strong>Nome do Produto (*):</strong></label><br>
+                    <input type="text" id="nome-produto" name="nome-produto" size="50"
+                        placeholder="Ex: Camisa Oficial I 2026" required>
+                    <br><br>
+
+                    <label for="categoria"><strong>Categoria (*):</strong></label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">-- Selecione a categoria --</option>
+                        <option value="camisa">Camisa</option>
+                        <option value="bone">Boné</option>
+                        <option value="caneca">Caneca</option>
+                        <option value="chaveiro">Chaveiro</option>
+                        <option value="moletom">Moletom</option>
+                        <option value="agasalho">Agasalho</option>
+                        <option value="acessorio">Acessório</option>
+                    </select>
+                    <br><br>
+
+                    <label for="preco"><strong>Preço (R$) (*):</strong></label><br>
+                    <input type="number" id="preco" name="preco" step="0.01" min="0" placeholder="0.00" required>
+                    <br><br>
+
+                    <label for="estoque"><strong>Estoque Disponível (*):</strong></label><br>
+                    <input type="number" id="estoque" name="estoque" min="0" value="0" required>
+                    <br><br>
+
+                    <label><strong>Tamanhos Disponíveis:</strong></label><br>
+                    <input type="checkbox" id="tam-p" name="tamanhos" value="P">
+                    <label for="tam-p">P</label>
+                    <input type="checkbox" id="tam-m" name="tamanhos" value="M">
+                    <label for="tam-m">M</label>
+                    <input type="checkbox" id="tam-g" name="tamanhos" value="G">
+                    <label for="tam-g">G</label>
+                    <input type="checkbox" id="tam-gg" name="tamanhos" value="GG">
+                    <label for="tam-gg">GG</label>
+                    <br><br>
+
+                    <label for="descricao-produto"><strong>Descrição do Produto:</strong></label><br>
+                    <textarea id="descricao-produto" name="descricao-produto" rows="5" cols="50"
+                        placeholder="Descreva o produto detalhadamente..."></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <button type="submit"><b>Cadastrar Produto</b></button>
+                <button type="reset"><i>Limpar Formulário</i></button>
+            </form>
+        </section>
+    </main>
+
+    <br>
+
+    <p><a href="index.html"><b>&larr; Voltar à Página Inicial</b></a></p>
+
+    <footer style="background-color: #000000; color: #FFFFFF;">
+        <center>
+            <p><b>Loja Oficial do Corinthians — Sistema Administrativo</b></p>
+            <p><small>&copy; 2026 Sport Club Corinthians Paulista. Todos os direitos reservados.</small></p>
+            <p><small><em>Trabalho acadêmico — Tecnologias para Internet I</em></small></p>
+        </center>
+    </footer>
+
+</body>
+
+</html>

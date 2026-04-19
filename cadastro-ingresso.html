@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Ingresso - Loja Oficial do Corinthians</title>
+</head>
+
+<body style="background-color: #FFFFFF; color: #000000;">
+
+    <header style="background-color: #000000; color: #FFFFFF;">
+        <center>
+            <img src="imagens/escudo.png" alt="Escudo do Corinthians" width="100">
+            <h1>Cadastro de Ingresso</h1>
+            <p><em>Venda de ingressos para jogos na Arena Corinthians</em></p>
+        </center>
+    </header>
+
+    <main>
+        <section>
+            <h2><strong>Formulário de Compra de Ingresso</strong></h2>
+            <p>
+                Preencha o formulário abaixo para registrar a <b>compra de ingressos</b>
+                para os jogos do <strong>Corinthians</strong> na <em>Arena Corinthians</em>.
+                Selecione o <i>jogo desejado</i>, o <u>setor</u> e informe os dados do comprador.
+                <mark>Leve um documento com foto no dia do jogo!</mark>
+            </p>
+        </section>
+
+        <br>
+
+        <section style="background-color: #EEEEEE; color: #000000;">
+            <center>
+                <img src="imagens/ingresso.png" alt="Ingressos do Corinthians" width="400">
+                <br>
+                <small>Ingressos para jogos na Arena Corinthians</small>
+            </center>
+        </section>
+
+        <br>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend><b>Dados do Ingresso</b></legend>
+                    <br>
+
+                    <label for="jogo"><strong>Jogo (*):</strong></label><br>
+                    <select id="jogo" name="jogo" required>
+                        <option value="">-- Selecione o jogo --</option>
+                        <option value="jogo1">Corinthians x Palmeiras — 10/05/2026 (Brasileiro)</option>
+                        <option value="jogo2">Corinthians x São Paulo — 24/05/2026 (Brasileiro)</option>
+                        <option value="jogo3">Corinthians x Flamengo — 07/06/2026 (Brasileiro)</option>
+                        <option value="jogo4">Corinthians x Santos — 21/06/2026 (Brasileiro)</option>
+                    </select>
+                    <br><br>
+
+                    <label><strong>Setor (*):</strong></label><br>
+                    <input type="radio" id="leste" name="setor" value="leste">
+                    <label for="leste">Leste Inferior — R$ 60,00</label><br>
+                    <input type="radio" id="oeste" name="setor" value="oeste">
+                    <label for="oeste">Oeste Inferior — R$ 120,00</label><br>
+                    <input type="radio" id="norte" name="setor" value="norte">
+                    <label for="norte">Norte — R$ 80,00</label><br>
+                    <input type="radio" id="sul" name="setor" value="sul">
+                    <label for="sul">Sul — R$ 80,00</label>
+                    <br><br>
+
+                    <label for="qtd-ingressos"><strong>Quantidade de Ingressos (*):</strong></label><br>
+                    <input type="number" id="qtd-ingressos" name="qtd-ingressos" min="1" max="4" value="1" required>
+                    <small>(Máximo 4 ingressos por CPF)</small>
+                    <br><br>
+
+                    <label for="nome-comprador"><strong>Nome do Comprador (*):</strong></label><br>
+                    <input type="text" id="nome-comprador" name="nome-comprador" size="50" required>
+                    <br><br>
+
+                    <label for="cpf-comprador"><strong>CPF do Comprador (*):</strong></label><br>
+                    <input type="text" id="cpf-comprador" name="cpf-comprador" size="14" placeholder="000.000.000-00"
+                        required>
+                    <br><br>
+
+                    <input type="checkbox" id="meia-entrada" name="meia-entrada" value="sim">
+                    <label for="meia-entrada"><strong>Meia-Entrada?</strong></label>
+                    <small><em>(Estudantes, idosos, PCD — apresentar documentação no dia)</em></small>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <button type="submit"><b>Comprar Ingresso</b></button>
+                <button type="reset"><i>Limpar Formulário</i></button>
+            </form>
+        </section>
+    </main>
+
+    <br>
+
+    <p><a href="index.html"><b>&larr; Voltar à Página Inicial</b></a></p>
+
+    <footer style="background-color: #000000; color: #FFFFFF;">
+        <center>
+            <p><b>Loja Oficial do Corinthians — Sistema Administrativo</b></p>
+            <p><small>&copy; 2026 Sport Club Corinthians Paulista. Todos os direitos reservados.</small></p>
+            <p><small><em>Trabalho acadêmico — Tecnologias para Internet I</em></small></p>
+        </center>
+    </footer>
+
+</body>
+
+</html>

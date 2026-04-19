@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Venda - Loja Oficial do Corinthians</title>
+</head>
+
+<body style="background-color: #FFFFFF; color: #000000;">
+
+    <header style="background-color: #000000; color: #FFFFFF;">
+        <center>
+            <img src="imagens/escudo.png" alt="Escudo do Corinthians" width="100">
+            <h1>Cadastro de Venda</h1>
+            <p><em>Registre novas vendas no sistema da Loja Oficial</em></p>
+        </center>
+    </header>
+
+    <main>
+        <section>
+            <h2><strong>Formulário de Registro de Venda</strong></h2>
+            <p>
+                Utilize este formulário para <b>registrar uma nova venda</b> realizada na
+                <strong>Loja Oficial do Corinthians</strong>. Selecione o <em>cliente</em>,
+                o <i>produto</i>, a quantidade e a forma de pagamento. Campos marcados com
+                <mark>(*)</mark> são <u>obrigatórios</u>.
+            </p>
+        </section>
+
+        <br>
+
+        <section style="background-color: #EEEEEE; color: #000000;">
+            <center>
+                <img src="imagens/produtos.png" alt="Produtos da Loja" width="400">
+                <br>
+                <small>Produtos disponíveis para venda</small>
+            </center>
+        </section>
+
+        <br>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend><b>Dados da Venda</b></legend>
+                    <br>
+
+                    <label for="cliente"><strong>Cliente (*):</strong></label><br>
+                    <select id="cliente" name="cliente" required>
+                        <option value="">-- Selecione o cliente --</option>
+                        <option value="1">João da Silva — CPF: 111.222.333-44</option>
+                        <option value="2">Maria Oliveira — CPF: 222.333.444-55</option>
+                        <option value="3">Carlos Santos — CPF: 333.444.555-66</option>
+                        <option value="4">Ana Paula Ferreira — CPF: 444.555.666-77</option>
+                        <option value="5">Roberto Almeida — CPF: 555.666.777-88</option>
+                    </select>
+                    <br><br>
+
+                    <label for="produto"><strong>Produto (*):</strong></label><br>
+                    <select id="produto" name="produto" required>
+                        <option value="">-- Selecione o produto --</option>
+                        <option value="camisa1">Camisa Oficial I 2026 — R$ 349,90</option>
+                        <option value="camisa2">Camisa Oficial II 2026 — R$ 349,90</option>
+                        <option value="camisa3">Camisa III 2026 — R$ 299,90</option>
+                        <option value="bone">Boné Oficial Aba Reta — R$ 89,90</option>
+                        <option value="caneca">Caneca Vai, Corinthians! — R$ 49,90</option>
+                        <option value="moletom">Moletom Oficial — R$ 249,90</option>
+                        <option value="chaveiro">Chaveiro Escudo — R$ 29,90</option>
+                        <option value="agasalho">Agasalho de Treino — R$ 399,90</option>
+                    </select>
+                    <br><br>
+
+                    <label for="quantidade"><strong>Quantidade (*):</strong></label><br>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="99" value="1" required>
+                    <br><br>
+
+                    <label><strong>Forma de Pagamento (*):</strong></label><br>
+                    <input type="radio" id="pix" name="pagamento" value="pix" checked>
+                    <label for="pix">Pix</label><br>
+                    <input type="radio" id="cartao" name="pagamento" value="cartao">
+                    <label for="cartao">Cartão de Crédito/Débito</label><br>
+                    <input type="radio" id="dinheiro" name="pagamento" value="dinheiro">
+                    <label for="dinheiro">Dinheiro</label><br>
+                    <input type="radio" id="boleto" name="pagamento" value="boleto">
+                    <label for="boleto">Boleto Bancário</label>
+                    <br><br>
+
+                    <label for="data-venda"><strong>Data da Venda (*):</strong></label><br>
+                    <input type="date" id="data-venda" name="data-venda" required>
+                    <br><br>
+
+                    <label for="valor-total"><strong>Valor Total (R$) (*):</strong></label><br>
+                    <input type="number" id="valor-total" name="valor-total" step="0.01" min="0" placeholder="0.00"
+                        required>
+                    <br><br>
+
+                    <label for="observacoes"><strong>Observações:</strong></label><br>
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="50"
+                        placeholder="Informações adicionais sobre a venda..."></textarea>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <button type="submit"><b>Registrar Venda</b></button>
+                <button type="reset"><i>Limpar Formulário</i></button>
+            </form>
+        </section>
+
+        <br>
+
+        <section style="background-color: #EEEEEE; color: #000000;">
+            <p>
+                <small><strong>Atenção:</strong> Após registrar a venda, o <em>estoque será atualizado
+                        automaticamente</em>. <i>Verifique os dados antes de confirmar.</i></small>
+            </p>
+        </section>
+    </main>
+
+    <br>
+
+    <p><a href="index.html"><b>&larr; Voltar à Página Inicial</b></a></p>
+
+    <footer style="background-color: #000000; color: #FFFFFF;">
+        <center>
+            <p><b>Loja Oficial do Corinthians — Sistema Administrativo</b></p>
+            <p><small>&copy; 2026 Sport Club Corinthians Paulista. Todos os direitos reservados.</small></p>
+            <p><small><em>Trabalho acadêmico — Tecnologias para Internet I</em></small></p>
+        </center>
+    </footer>
+
+</body>
+
+</html>
